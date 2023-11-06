@@ -42,10 +42,6 @@ def delete(id):
     except:
         return 'There was a problem deleting that task'
 
-if __name__ == '__main__':
-    with app.app_context():
-        app.run(debug=True)
-
 @app.route('/update/<int:id>', methods=['GET', 'POST'])
 def update(id):
     task_update = Todo.query.get_or_404(id)
@@ -60,5 +56,9 @@ def update(id):
             return 'There was an issue updating your task'
     else:
         return render_template('update.html', task=task_update)
+
+if __name__ == '__main__':
+    with app.app_context():
+        app.run(debug=True)
 
 # venv\Scripts\activate

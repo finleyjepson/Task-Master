@@ -34,3 +34,7 @@ td {
 #content {
     width: 70%;
 }
+
+.submit-button {
+    margin-top: 10px;
+}
