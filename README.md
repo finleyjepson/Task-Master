@@ -1,6 +1,12 @@
 # Task Master
 
 ## Requirements
+### Python
+Install Python 3.11.6 -
+[Download](https://www.python.org/downloads/release/python-3116/)
+___
+
+### Packages
 place the following in `requirements.txt` :
 ```
 blinker==1.7.0
